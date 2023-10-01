@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+.container::before{
+    content: "";
+    background: url(netflix.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.container .navbar .left img{
+    height: 150px;
+    margin-top: -20;
+    position: absolute;
+    left: 35px;
+}
+.container .navbar .right{
+    
+    display: flex;
+    height: 100px;
+    float: right;
+    position: absolute;
+    right: 50px;
+}
+.container .navbar .right .language{
+    margin: auto;
+    font-size: 18px;
+    padding: 7px 25px;
+    color: white;
+    background:rgba(0, 0, 0, 0.724);
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 3px;
+
+    
+    
+}
+.container .navbar .right .language option{
+    background-color: gray;
+}
+.container .navbar .right button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    position: relative;
+    text-align: center;
+    top: 20ch;
+}
+.content h1{
+    font-size: 50;
+    font-family: sans-serif;
+}
+.content h2{
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 30;
+}
+.content h3{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.email{
+    margin: 20;
+}
+.email input{
+    height: 50;
+    width: 300;
+    position: relative;
+    border-radius: 5px;
+    background: black;
+    opacity: 0.5;
+    color: white;
+    border: 2px solid white;
+    padding: 17px;
+    font-size: larger;
+}
+.content button {
+    height: 50;
+    width: 200;
+    border-radius: 5px;
+    position: relative;
+    margin: 5;
+    background-color: #e50914;
+    border: none;
+}
+.content button a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+}
+.content button:hover{
+    background-color: #930f16;
+}
+.container .right button:hover{
+    background-color: #930f16;
+}
+.icon{
+    position: relative;
+    top: 42;
+    left: 25;
+    height: 0;
+    opacity: 0.3;
+}
